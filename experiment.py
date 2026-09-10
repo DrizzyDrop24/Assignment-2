@@ -50,7 +50,6 @@ def time_trial(num_trials, data_size, min_value, max_value))
     avg_binary = binary_total / num_trials
 
     return(float(avg_linear), float(avg_binary))
-    pass
     
 # Conduct *num_trials* number of trials of linear and
 # binary search using a random list of *data_size* with
@@ -71,6 +70,3 @@ def time_trial(num_trials, data_size, min_value, max_value))
 # expensive_thing()
 # end_time = perf_counter_ns()
 # time_elapsed += (end_time - start_time)
-def time_trial(num_trials, data_size, min_value, max_value):
-    # YOUR CODE HERE
-    pass
