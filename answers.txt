@@ -42,6 +42,9 @@ x = 31.98
 
 At least 32 searches
 
-4. List, Dictionary, Class
+4.  The function time_trial() returns a tuple. List three alternative Python
+constructs that could have been used instead of a tuple as the return type to hold multiple values.
+
+List, Dictionary, Class
 
 
