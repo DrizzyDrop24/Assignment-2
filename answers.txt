@@ -1,3 +1,5 @@
+[Sahara Bangura]
+
 1. What is the tightest bound Big-O runtime of random_int_list()?
 O(n). The function loops exactly length times and performs a constant amount of work during each iteration (a call to randint and a call to append).
 
@@ -6,4 +8,40 @@ O(n log n + t log n + tn)
 n = data_size
 t = num_trials
 
-3. Sort vs Linear Search
+3. Sort vs Linear Search: In the worst case, how many searches do you need to do to make it worthwhile
+to sort an array to use binary search instead of just using linear search
+if the array has 10,000 elements and is originally unsorted. Assume
+that every search will fail to find the sought element. Assume that linear
+search takes 5 instructions for each element considered and binary search takes
+ 10. Assume that every instruction takes the same amount of time. Assume that
+the sorting algorithm takes 12 * N * log(N) instructions to complete. Your 
+final answer just needs to be a single number, but show your work (math).
+
+Given: 
+N= 10,000
+Linear Search = 5N instructions
+Binary Search = 10log2(N) instructions
+Sorting = 12Nlog2(N) instructions
+
+log2(10,000) = 13.29
+
+12 x 10000 x 13.29 = 1,594,800 - sorting cost
+5 x 10,000 = 50,000 - per search - linear search cost
+10 x 13.29 = 133 - per search
+
+Let x = number of searches
+
+Sorting + Binary:
+1,594,800 + 133x
+
+Linear: 50,000x
+
+1,594,800 + 133x = 50,000x
+1,594,800 =49,867x
+x = 31.98
+
+At least 32 searches
+
+4. List, Dictionary, Class
+
+
