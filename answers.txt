@@ -1,0 +1,9 @@
+1. What is the tightest bound Big-O runtime of random_int_list()?
+O(n). The function loops exactly length times and performs a constant amount of work during each iteration (a call to randint and a call to append).
+
+2. What is the tightest bound Big-O runtime of time_trial()?
+O(n log n + t log n + tn)
+n = data_size
+t = num_trials
+
+3. Sort vs Linear Search
